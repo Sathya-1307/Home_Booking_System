@@ -69,7 +69,7 @@ export default function AddHomeRent() {
 
       if (res.ok) {
         alert("🏡 Home for Rent added successfully!");
-        navigate("/");
+        navigate("/dashboard");
       } else {
         const errText = await res.text();
         alert("Failed to add home: " + errText);

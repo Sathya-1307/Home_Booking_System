@@ -20,7 +20,7 @@ import { OAuth2Client } from "google-auth-library";
 
 import fetch from "node-fetch"; // for Fast2SMS API
 
-// Temporary store for OTPs (in production, use DB or Redis)
+
 
 const JWT_SECRET = "my_super_secret_key_123";
 
@@ -51,10 +51,11 @@ const upload = multer({ storage });
 
 // ✅ MySQL Connection
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "sathya",
-  database: "homestore",
+  host: "bsuxpkxkrjspvyb5hyux-mysql.services.clever-cloud.com",
+  user: "uuhdkz3gl00wq8rw",
+  password: "TonLh5gnZEMxBdbuSlMh",
+  database: "bsuxpkxkrjspvyb5hyux",
+  port: 3306,
 });
 
 db.connect((err) => {
